@@ -23,6 +23,10 @@ function App() {
 		setValue([ ...value, data ]);
   };
 
+  // const updateTotal = data => {
+	// 	setTotal( ...value );
+  // };
+
   
   
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
