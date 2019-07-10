@@ -10,7 +10,7 @@ export const MainContainer = styled.div`
   height: 625px;
   background-color: #ba1843;
   border-radius:10px;
-  border:1px solid lightgray;
+  border:2px solid #949191;
 `
 
 
@@ -25,7 +25,6 @@ export const TopContainer = styled.div`
   flex-direction:column;
   width: 95%;
   height: 20%;
-  border: 1px solid black;
   
 `
 export const LogoContainer = styled.div`
@@ -35,7 +34,6 @@ export const LogoContainer = styled.div`
   flex-direction:column;
   width: 100%;
   height: 35%;
-  border: 1px solid blue;
   
 `
 export const DisplayContainer = styled.div`
@@ -45,7 +43,6 @@ export const DisplayContainer = styled.div`
   flex-direction:column;
   width: 100%;
   height: 65%;
-  border: 1px solid red;
   
 `
 
@@ -59,7 +56,6 @@ export const ButtonContainer = styled.div`
   align-items:center;
   width: 95%;
   height: 80%;
-  border: 1px solid black;
 `
 
 export const LeftContainer = styled.div`
