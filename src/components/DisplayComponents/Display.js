@@ -1,10 +1,10 @@
 import React from "react";
 import { DisplayArea } from './DisplayStyles';
 
-export const Display = () => {
+export const Display = ({total}) => {
   return (
     <DisplayArea>
-      {'0'}
+      {total}
     </DisplayArea>
   )
 };

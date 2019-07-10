@@ -1,9 +1,11 @@
 import React from "react";
 import { NumberButtonStyle } from '../ButtonStyles/NumberButtonStyle';
-export const NumberButton = (props) => {
+
+
+export const NumberButton = ({data}) => {
   return (
     <NumberButtonStyle>
-      {props.number}
+      {data}
       {/* Display a button element rendering the data being passed down from the parent container on props */}
     </NumberButtonStyle>
   );

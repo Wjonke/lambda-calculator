@@ -12,7 +12,7 @@ import { numbers } from '../../../data'
 export const Numbers = () => {
 
   // STEP 2 - add the imported data to state
-  const [ numbersList, setNumbersList ] = useState([numbers])
+  const [ numbersList, setNumbersList ] = useState(numbers)
 
 
   return (
@@ -21,9 +21,9 @@ export const Numbers = () => {
       component matching the name on the provided file. Pass
       it any props needed by the child component*/}
       
-      {numbers.map((number) => {
+      {numbersList.map((number, i) => {
         return (
-          <NumberButton key={number} number={number} />
+          <NumberButton key={i} data={number} />
         )
       })}
       
