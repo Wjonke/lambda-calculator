@@ -3,15 +3,15 @@ import { Numbers } from '../src/components/ButtonComponents/NumberButtons/Number
 import { Specials } from '../src/components/ButtonComponents/SpecialButtons/Specials';
 import { Display } from '../src/components/DisplayComponents/Display';
 import { Operators } from '../src/components/ButtonComponents/OperatorButtons/Operators';
+import { MainContainer, DisplayContainer, ButtonContainer, TopContainer, LeftContainer, RightContainer, LogoContainer } from './AppStyles'
+
 
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
-
-
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
 
-import "./App.css";
+
 
 
 
@@ -23,16 +23,34 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
   return (
-    <div className="container">
-      <Logo />
-      <div className="App">
+    
+    
+    <div className="App">
       {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display/>
-        <Numbers/>
-        <Operators/>
-        <Specials/>
-      </div>
+      <MainContainer>
+
+        <TopContainer>
+          <LogoContainer>
+            <Logo />
+          </LogoContainer>
+          <DisplayContainer>
+            <Display />
+          </DisplayContainer>
+        </TopContainer>
+
+        <ButtonContainer>  
+          <LeftContainer>
+            <Specials />
+            <Numbers />
+          </LeftContainer>  
+
+          <RightContainer>
+            <Operators />
+          </RightContainer>  
+        </ButtonContainer>
+      </MainContainer>
     </div>
+    
   );
 }
 
