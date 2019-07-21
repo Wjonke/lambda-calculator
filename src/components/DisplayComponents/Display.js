@@ -1,5 +1,10 @@
 import React from "react";
+import { DisplayArea } from './DisplayStyles';
 
-const Display = () => {
-  return <div>{/* Display any props data here */}</div>;
+export const Display = ({total}) => {
+  return (
+    <DisplayArea>
+      {total}
+    </DisplayArea>
+  )
 };
